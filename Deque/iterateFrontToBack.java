@@ -1,5 +1,6 @@
-import java.util.*; 
-  
+import java.util.Deque;
+import java.util.LinkedList;
+import java.util.Iterator;
 public class iterateFrontToBack { 
     @SuppressWarnings("rawtypes")
     public static void main(String[] args) 
