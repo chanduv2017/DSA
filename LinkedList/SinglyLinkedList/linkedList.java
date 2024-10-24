@@ -1,3 +1,5 @@
+package SinglyLinkedList;
+
 class Node {
   int data;
   Node next;
