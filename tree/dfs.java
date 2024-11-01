@@ -1,5 +1,5 @@
 
-package tree;
+package Tree;
 
 class Node {
   int key;
