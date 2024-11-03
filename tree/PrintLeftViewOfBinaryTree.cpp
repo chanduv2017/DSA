@@ -14,7 +14,7 @@ struct Node
 };
 
 int maxLevel = 0;
-void printLeft(Node *root, int level)
+void printLeftRecursive(Node *root, int level)
 {
   if (root == NULL)
     return;
@@ -23,17 +23,17 @@ void printLeft(Node *root, int level)
     cout << root->key << " ";
     maxLevel = level;
   }
-  printLeft(root->left, level + 1);
-  printLeft(root->right, level + 1);
+  printLeftRecursive(root->left, level + 1);
+  printLeftRecursive(root->right, level + 1);
 }
 
 void printLeftView(Node *root)
 {
-  printLeft(root, 1);
-  printLeftRecursive(root);
+  printLeftRecursive(root, 1);
+  printLeft(root);
 }
 
-void printLeftRecursive(Node *root)
+void printLeft(Node *root)
 {
   if (root == NULL)
     return;
